@@ -52,17 +52,27 @@ export default function Home() {
       </Link>
       <Link href="/register">
         <div className="underline text-orange-500 hover:text-orange-700 mb-1">
-          Go to Register Page
+          Go to Register Page in route groups
         </div>
       </Link>
       <Link href="/login">
         <div className="underline text-orange-500 hover:text-orange-700 mb-1">
-          Go to Login Page
+          Go to Login Page in route groups
         </div>
       </Link>
       <Link href="/forgot-password">
         <div className="underline text-orange-500 hover:text-orange-700 mb-1">
-          Go to Forgot Password Page
+          Go to Forgot Password Page in route groups
+        </div>
+      </Link>
+      <Link href="/sharable-ui-1">
+        <div className="underline text-orange-500 hover:text-orange-700 mb-1">
+          Go to Sharable ui 1 in route groups
+        </div>
+      </Link>
+      <Link href="/sharable-ui-2">
+        <div className="underline text-orange-500 hover:text-orange-700 mb-1">
+          Go to Sharable ui 2 in route groups
         </div>
       </Link>
     </>

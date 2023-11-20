@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+export const metadata = {
+  title: "This is Reviews Page",
+};
+
 const ReviewId = ({
   params,
 }: {

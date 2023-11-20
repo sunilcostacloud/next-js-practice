@@ -1,7 +1,35 @@
 import Link from "next/link";
 import React from "react";
+import { Metadata } from "next";
 
-const ProductDetails = ({ params }: { params: { productId: string } }) => {
+type Props = {
+  params: {
+    productId: string;
+  };
+};
+
+// export const generateMetadata = ({ params }: Props): Metadata => {
+//   return {
+//     title: `Product ${params.productId}`,
+//   };
+// };
+
+// generateMetadata can also be an async function
+
+export const generateMetadata = async ({
+  params,
+}: Props): Promise<Metadata> => {
+  const title = await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`iphone ${params.productId}`);
+    }, 1000);
+  });
+  return {
+    title: `Product ${title}`,
+  };
+};
+
+const ProductDetails = ({ params }: Props) => {
   //   console.log("params", params);
   return (
     <>
